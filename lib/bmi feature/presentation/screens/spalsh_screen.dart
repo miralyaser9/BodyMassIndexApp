@@ -1,8 +1,9 @@
 import 'dart:async';
 
-import 'package:bmialculator/screens/bmi_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'bmi_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
