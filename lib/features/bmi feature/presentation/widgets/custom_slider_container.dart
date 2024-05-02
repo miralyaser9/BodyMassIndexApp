@@ -10,7 +10,13 @@ class CustomSLiderContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      decoration: BoxDecoration(boxShadow: const [BoxShadow(color: Colors.white24,offset:Offset(5,10))],color: Colors.cyanAccent,borderRadius: BorderRadius.circular(16)),
+      decoration: BoxDecoration(boxShadow: const [
+        BoxShadow(color: Colors.white24,offset:Offset(5,10))]
+          ,color: Colors.cyanAccent,borderRadius: BorderRadius.circular(16),
+          gradient: LinearGradient(colors: [Colors.white,Colors.purple.shade200],
+              begin: Alignment.bottomRight,end: Alignment.topLeft
+          )
+      ),
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
@@ -25,13 +31,12 @@ class CustomSLiderContainer extends StatelessWidget {
                   ,const Text("cm",style: TextStyle(fontSize: 25),)],)
               ,
               Slider(
+                activeColor: Colors.purpleAccent,
                   value: BlocProvider.of<BmiCubit>(context).sliderValue,
                   max: 250,
                   min: 0,
                   onChanged: (changedValue){
                     BlocProvider.of<BmiCubit>(context).updateSliderValue(changedValue: changedValue);
-                    print(changedValue);
-
                   }
               )
             ],),

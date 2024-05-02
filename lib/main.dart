@@ -1,9 +1,7 @@
-import 'package:bmialculator/bmi%20feature/data/manager/bmi_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'bmi feature/presentation/screens/spalsh_screen.dart';
-
+import 'features/bmi feature/data/manager/bmi_cubit.dart';
+import 'features/bmi feature/presentation/screens/onboarding_screen.dart';
 void main() {
   runApp(const MyApp());
 }

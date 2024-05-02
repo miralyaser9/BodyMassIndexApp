@@ -20,10 +20,13 @@ class CustomGenderContainer extends StatelessWidget {
                 borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(80)),
                 boxShadow: const [BoxShadow(color: Colors.white24,offset:Offset(5,7))] ),
             child: Center(
-              child: Column(children: [
-                Icon(icon ,size: 90,),
-                Text(iconTitle,style: const TextStyle(fontSize: 37,fontWeight: FontWeight.bold,fontFamily: "frosty"),)
-              ],),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(children: [
+                  Icon(icon ,size: 90,),
+                  Text(iconTitle,style: const TextStyle(fontSize: 37,fontWeight: FontWeight.bold,fontFamily: "frosty"),)
+                ],),
+              ),
             ),
           ),
         )
