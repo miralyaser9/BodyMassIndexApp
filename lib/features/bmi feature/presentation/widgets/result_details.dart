@@ -15,7 +15,7 @@ class ResultDetails extends StatelessWidget {
         Text("Your Age  is ${BlocProvider.of<BmiCubit>(context).age} Years",style: const TextStyle(fontWeight: FontWeight.bold),),
         Text("Your Weight  is ${BlocProvider.of<BmiCubit>(context).weight} Kg",style: const TextStyle(fontWeight: FontWeight.bold),),
         Text("Your Height  is ${BlocProvider.of<BmiCubit>(context).sliderValue.round()} CM",style: const TextStyle(fontWeight: FontWeight.bold),),
-        Text("Your BMI Value  is ${BlocProvider.of<BmiCubit>(context).bmi} KG/cm2",style: const TextStyle(fontWeight: FontWeight.bold),),
+        Text("Your BMI Value  is ${BlocProvider.of<BmiCubit>(context).bmi} KG/m2",style: const TextStyle(fontWeight: FontWeight.bold),),
          SizedBox(height: height*0.0300,),
         AnimatedTextKit(
           animatedTexts: [
